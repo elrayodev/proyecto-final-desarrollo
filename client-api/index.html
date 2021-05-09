@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Axios consuming API REST Demo</title>
+    </head>
+    
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script src="index.js"></script>
+        <div>
+            <button onclick="getInventario()"> Ver Inventario </button>
+        </div>
+    
+        <div>
+            <h1>Inventario</h1>
+            <ul></ul>
+        </div>
+
+        <div>
+            <form id="crear">
+                <input type="number" id="id" placeholder="Id">
+                <input type="text" id="name" placeholder="Nombre de Producto">
+                <input type="number" id="quantity" placeholder="Cantidad de Producto">
+                <input type="number" id="price" placeholder="Precio">
+                <input type="text" id="provider" placeholder="Proveedor">
+                <input type="date" id="fechaUltimoRegistro" placeholder="Ultimo Registro">
+                <button onclick="createTProducto()"> Crear Producto </button>
+            </form>
+        </div>
+        <br><br>
+        <div id="borrar">
+            <button onclick="deleteProducto()"> Borrar Producto </button>
+            <p></p>
+        </div>
+    </body>
+</html>
