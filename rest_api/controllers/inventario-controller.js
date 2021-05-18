@@ -7,10 +7,13 @@ function createProducto(req, res){
         quantity: req.body.quantity,
         price: req.body.price,
         provider: req.body.provider,
-        fechaUcltimoRegistro: req.body.fechaUltimoRegistro
+        fechaUltimoRegistro: req.body.fechaUltimoRegistro,
     });
 
     producto.save((err, result) => {
+
+        console.log(req.body.img)
+
         if(err){
             return res.status(500).json({
                 error: true,

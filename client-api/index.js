@@ -1,5 +1,3 @@
-const { default: axios } = require("axios");
-
 const agregarLista = (inventario) => {
 
     const ul = document.querySelector('ul');

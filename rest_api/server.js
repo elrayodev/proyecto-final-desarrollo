@@ -31,5 +31,5 @@ app.use(express.urlencoded({extended: true}));
 app.use("/inventario", require("./routes/inventario-routes"));
 
 app.listen(port, ()=>{
-    console.log("El servidor está escuchando...");
+    console.log("El servidor está escuchando..." + port);
 })

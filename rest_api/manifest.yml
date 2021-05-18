@@ -1,0 +1,5 @@
+---
+applications:
+  - name: inventario-api
+    random-route: true
+    memory: 128M
